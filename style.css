@@ -1,17 +1,18 @@
 /* HIDE TASK LIST */
 .task-list {
-  display: none;
-}
-
-/* HIDE MY JOURNAL */
-.journal-grid {
-  display: none;
-}
-
-/* STYLE THE NAVIGATION MENU */
-.page-navigation {
+    display: none;
+  }
+  
+  /* HIDE MY JOURNAL */
+  .journal-grid {
+    display: none;
+  }
+  
+  /* STYLE THE NAVIGATION MENU */
+  .page-navigation {
     display: flex;
     justify-content: space-evenly;
+    text-decoration: none;
     text-align: center;
     list-style-type: none; /* Remove bullets */
     background-color: #dcdcdc;
@@ -64,6 +65,7 @@
   
   .topnav {
     display: block;
+    text-decoration: none;
     position: absolute;
     justify-self: right;
     text-align: right;
@@ -84,6 +86,7 @@
     font-size: 20px;
     display: block;
     justify-self: right;
+    text-decoration: none;
   }
   
   /* HIDE myLinks UNTIL HAMBURGER IS CLICKED */
@@ -441,6 +444,153 @@
     border-color: #c4aead;
   }
   
+  /* IDEAS AND INSPIRATION START */
+  
+  .ideas-inspiration {
+    display: grid;
+    padding-bottom: 20px;
+    background-color: #dcdcdc;
+    margin-top: 30px;
+  }
+  
+  .ideas-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: top;
+    font-size: 22px;
+    color: black;
+    text-align: center;
+    gap: 20px;
+    padding: 15px;
+  }
+  
+  .underline-title {
+    border-bottom: 4px solid;
+    border-color: #c4aead;
+  }
+  
+  .no-space {
+    line-height: 1.6;
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .space {
+    display: grid;
+    grid-template-columns: 1;
+    margin-top: 15px;
+    padding: 10px;
+  }
+  
+  .try-these {
+    line-height: 1.6;
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .verge-links {
+    display: grid;
+    grid-template-columns: 1;
+    margin-top: 15px;
+    padding: 10px;
+  }
+  
+  .creativity {
+    line-height: 1.6;
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .try-these-links {
+    display: grid;
+    grid-template-columns: 1;
+    margin-top: 15px;
+    padding: 10px;
+  }
+  
+  .glut {
+    display: grid;
+    grid-template-columns: 3;
+    margin-top: 15px;
+    padding: 10px 10px 20px 10px;
+    background-color: #dcdcdc;
+  }
+  
+  .glut-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: top;
+    font-size: 26px;
+    color: #c4aead;
+    margin-top: 15px;
+    padding: 10px 10px 20px 10px;
+    background-color: #dcdcdc;
+  }
+  
+  .glut-box-one {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .glut-box-two {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .glut-box-three {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  /* MOBILE RESPONSIVENESS MOBILE PORTRAIT */
+  /* IDEAS AND INSPIRATION: 1 COLUMN */
+  @media screen and (max-width: 320px) {
+    .ideas-box {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 20px;
+      padding: 15px;
+    }
+  }
+  
+  /* MOBILE RESPONSIVENESS MOBILE LANDSCAPE */
+  /* SEASON GRID: 1 COLUMN */
+  @media screen and (max-width: 480px) {
+    .ideas-box {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 20px;
+      padding: 15px;
+    }
+  }
+  
+  /* MOBILE RESPONSIVENESS TABLET PORTRAIT */
+  /* SEASON GRID: 2 COLUMNS */
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .ideas-box {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 20px;
+      padding: 15px;
+    }
+  }
+  
+  /* MOBILE RESPONSIVENESS TABLET LANDSCAPE */
+  /* SEASON GRID: 2 COLUMNS */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .ideas-box {
+      display: flex;
+      flex-wrap: wrap;
+      /*     grid-template-columns: repeat(2, 1fr); */
+      grid-gap: 20px;
+      padding: 15px;
+    }
+  }
+  
+  /* IDEAS AND INSPIRATION FINISH */
+  
   .how-do-I {
     display: flex;
     justify-content: space-around;
@@ -456,20 +606,20 @@
   }
   
   /* ADD TASK LIST */
-  .task-list {
+  /* .task-list {
     font-size: 18px;
     background-color: #dcdcdc;
     padding: 10px;
-  }
+  } */
   
-  .task-header {
+  /* .task-header {
     display: flex;
     background-color: #fff;
     padding: 20px 20px;
     text-align: center;
-  }
+  } */
   
-  #myInput {
+  /* #myInput {
     margin: 10px;
     border: 1px #dcdcdc;
     width: 75%;
@@ -477,10 +627,10 @@
     float: left;
     font-size: 24px;
     border-radius: 5%;
-  }
+  } */
   
   /* Style the "Add" button */
-  .addBtn {
+  /* .addBtn {
     margin: 10px;
     border: 100px red;
     padding: 5px;
@@ -492,14 +642,14 @@
     font-size: 24px;
     cursor: pointer;
     border-radius: 10%;
-  }
+  } */
   
-  .addBtn:hover {
+  /* .addBtn:hover {
     background-color: #c4aead;
-  }
+  } */
   
   /* Style the list items */
-  ul li {
+  /* ul li {
     cursor: pointer;
     position: relative;
     padding: 12px 12px 12px 12px;
@@ -507,29 +657,29 @@
     background: #c4aead;
     font-size: 30px;
     height: 30px;
-  }
+  } */
   
   /* Darker background-color on hover */
-  ul li:hover {
+  /* ul li:hover {
     background: #dcdcdc;
-  }
+  } */
   
   /* Style the close button */
-  .close-task {
+  /* .close-task {
     position: absolute;
     right: 0;
     top: 0;
     padding: 12px 12px 12px 12px;
     font-size: 30px;
     height: 30px;
-  }
+  } */
   
   /* Clear floats after the header */
-  .header:after {
+  /* .header:after {
     content: "";
     display: table;
     clear: both;
-  }
+  } */
   /* FINISH TASK LIST */
   
   .how-topic {
@@ -576,6 +726,7 @@
   
   a:link {
     color: #686b69;
+    text-decoration: none;
   }
   a:visited {
     color: #686b69;
