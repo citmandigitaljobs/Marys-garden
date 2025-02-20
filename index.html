@@ -545,7 +545,7 @@
 
               <form id="FORM_ID" method="POST" action="https://script.google.com/u/0/home/projects/1KOH0Heruz2p9D7KCDO66t1BKJxa_IhenNDyZK-BqhW_XxfLwwJc2Obrb/edit">          
                         <form id="FORM_ID" method="POST" action="https://script.google.com/macros/s/AKfycbyOcxvQrQDrBYP_2N29gIEoUcdNYCbLEEJ2ElAtImUwV6X5sdoKyxWCALztdAKl8qlfug/exec">
-            <form id="FORM_ID" method="POST" action="https://script.google.com/macros/s/AKfycbyFh00_wVVZ7xt3acdQ8o4TQbVOpGiaS8v-JiBMHE0c2iIvAvEk8yz2vaOq5W_VSR3tkQ/exec">
+<!--             <form id="FORM_ID" method="POST" action="https://script.google.com/macros/s/AKfycbyFh00_wVVZ7xt3acdQ8o4TQbVOpGiaS8v-JiBMHE0c2iIvAvEk8yz2vaOq5W_VSR3tkQ/exec">
 
               <div class="form-row">
                 <label for="name">Topic</label>
@@ -572,8 +572,36 @@
               </div>
             </form>
           </div>
-        </section>
+        </section> 
 
+        <form id="FORM_ID" method="POST" action="https://script.google.com/macros/s/AKfycbyFh00_wVVZ7xt3acdQ8o4TQbVOpGiaS8v-JiBMHE0c2iIvAvEk8yz2vaOq5W_VSR3tkQ/exec">
+
+              <div class="form-row">
+                <label for="name">Topic</label>
+                <br>
+                <input type="text" name="Topic" placeholder="Write the topic here" id="topic" autofocus>
+                <br>
+                <br>
+                <!--            <input name="topic" type="text" required> -->
+                <div class="form-row">
+                  <label for="notes">Notes</label>
+                  <br>
+                  <!--                   <input type="textarea" name="mynotes" placeholder="Write your notes here" id="notes" autofocus> -->
+                  <input type="textarea" name="Notes" placeholder="Write your notes here" id="notes" autofocus>
+                  <br>
+                  <br>
+                  <!--            <input name="mynotes" type="textarea" required> -->
+                  <label for="date">Date:</label>
+                  <br>
+                  <input type="date" id="date" name="Date:">
+                  <br>
+                  <br>
+                  <button type="submit" id="submit-button" name="btnsubmit">Enter</button>
+                </div>
+              </div>
+            </form>
+        
+        
         <!--    LINK TO GOOGLESHEET    <a href="https://docs.google.com/spreadsheets/d/1qlkUWMJl-8PGZX05bYWGJq2Bs49DuSPHBy0ICq6zdZY/edit?gid=0#gid=0"> -->
 
         <div class="journal-notes-display">
@@ -581,9 +609,13 @@
             <h3>Notes from Mary's journal...</h3>
             <img class="leaves" src="https://i.imgur.com/7uoVD09.jpg" alt="leaves">
           </div>
-          <div class="appsheet">
-            <iframe src="https://www.appsheet.com/preview/a24554a4-44f3-4d44-b9b5-9165ec9ca82e" width="100%" height="568"></iframe>
+<!--           <div class="appsheet">
+            <iframe src="https://www.appsheet.com/preview/a24554a4-44f3-4d44-b9b5-9165ec9ca82e?platform=desktop#vss=H4sIAAAAAAAAA62OvQrCMBRGX0W-OU-QVRxU7KK4GIfY3EIwTUqTqiXk3b31B3EVx3su5_BlXCxdt0nXZ8hD_lxrGiGRFXZjRwpSYR586oNTEAqVbp9wFYbeazerQqKoUFCO4h1hApl_aMg_7BCwhnyyjaV-Ck46h14yvyeVwZeIItAOSZ8cPfazWAqzJtRDJLPnUb-OiUu_uHXam00w3G20i1Tu4sLER34BAAA=&view=Journal%20Notes&appName=MarysMasterpiece-292787225" width="100%" height="568"></iframe>            -->
           </div>
+          
+<!--           https://www.appsheet.com/preview/a24554a4-44f3-4d44-b9b5-9165ec9ca82e?platform=desktop#vss=H4sIAAAAAAAAA62OvQrCMBRGX0W-OU-QVRxU7KK4GIfY3EIwTUqTqiXk3b31B3EVx3su5_BlXCxdt0nXZ8hD_lxrGiGRFXZjRwpSYR586oNTEAqVbp9wFYbeazerQqKoUFCO4h1hApl_aMg_7BCwhnyyjaV-Ck46h14yvyeVwZeIItAOSZ8cPfazWAqzJtRDJLPnUb-OiUu_uHXam00w3G20i1Tu4sLER34BAAA=&view=Journal%20Notes&appName=MarysMasterpiece-292787225
+           -->
+          
           <!--           <iframe style="overflow: hidden; width: 100%; height: 100%; position: relative; border: none;" src="https://www.appsheet.com/start/YOUR_APP_ID?refresh=1&wipe=1"></iframe> -->
         </div>
 
@@ -610,7 +642,6 @@
     <!--  ----------------------------------        -->
 
     <!--    EMBED GOOGLE SHEET USING THESE INSTRUCTIONS https://spreadsheetpoint.com/embed-a-google-sheet/   -->
-        <!--  ENABLED 20FEB 25 BECAUSE LINK TO APP DISAPPEARED        -->
             <div class="embed-googlesheet">          
           <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS5IvCHHKyb4FPja8Bo4r3CNXyzGDFNftLVrzKjwnguq_dFGoks_cFMifLGH4FCz8aF5Lfrab8qcLOJ/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="500" frameborder="0" scrolling="yes"></iframe>
     <!--          ----------------------------------        -->
