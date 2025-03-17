@@ -335,6 +335,7 @@ h3 {
 .weather {
   margin-top: 10px;
   margin-bottom: 10px;
+  background-color: #dcdcdc;
 }
 
 .calendar-and-moon {
@@ -343,6 +344,7 @@ h3 {
   object-fit: scale-down;
   width: 100%;
   background-color: #dcdcdc;
+  /*   border: 1px solid green; */
 }
 
 /* MOBILE RESPONSIVENESS MOBILE PORTRAIT */
@@ -374,7 +376,8 @@ h3 {
   left: 0;
   width: 95%;
   height: 100%;
-  padding: 10px;
+  /*   padding: 15px; */
+  margin: 10px;
 }
 
 .moon-planting-desktop {
@@ -382,23 +385,36 @@ h3 {
   flex-direction: column;
   align-items: start;
   object-fit: scale-down;
-  height: max;
+  /*   width: 95%;
+  height: 100%; */
+  /*   height: max; */
   margin: 10px;
+  /*   border: 1px solid red; */
 }
 
 .moon-phase-descriptions {
   display: flex;
   flex-direction: column;
   align-items: start;
+  background-color: white;
+  padding-left: 20px;
+  /*     padding-bottom: 5px; */
+}
+
+.underline-moon-title {
+  border-bottom: 4px solid;
+  border-color: #c4aead;
 }
 
 .moon-image-words {
   display: flex;
   width: fit-content;
   align-items: center;
+  /*   height: 100px; */
   height: 100px;
   background-color: white;
   font-size: 16px;
+  padding-top: 5px;
 }
 
 .moon-image {
@@ -446,8 +462,16 @@ h3 {
 
 /* IDEAS AND INSPIRATION START */
 
+.ideas {
+  display: grid;
+  padding-bottom: 20px;
+  background-color: #dcdcdc;
+  margin-top: 30px;
+}
+
 .ideas-inspiration {
   display: grid;
+  width: 450px;
   padding-bottom: 20px;
   background-color: #dcdcdc;
   margin-top: 30px;
@@ -455,6 +479,7 @@ h3 {
 
 .ideas-box {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: top;
@@ -463,6 +488,7 @@ h3 {
   text-align: center;
   gap: 20px;
   padding: 15px;
+  /*     border: 1px solid blue; */
 }
 
 .underline-title {
@@ -472,84 +498,123 @@ h3 {
 
 .no-space {
   line-height: 1.6;
+  /*   width: 500px; */
+  width: 300px;
   background-color: white;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*             border: 1px solid purple; */
 }
 
 .space {
   display: grid;
   grid-template-columns: 1;
-  margin-top: 15px;
+  margin-top: 10px;
+  /*             border: 1px solid green; */
+}
+
+.no-space-image {
+  width: 250px;
+  max-height: auto;
+  object-fit: auto;
+  padding-bottom: 20px;
   padding: 10px;
+  margin-top: 10px;
+  border-radius: 20px 20px 20px 20px;
+  border-collapse: collapse;
+  overflow: hidden;
 }
 
 .try-these {
   line-height: 1.6;
+  /*   width: 500px; */
+  width: 300px;
   background-color: white;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*             border: 1px solid purple; */
 }
 
 .verge-links {
   display: grid;
+  /*     width: 500px; */
   grid-template-columns: 1;
   margin-top: 15px;
   padding: 10px;
+  /*               border: 1px solid green; */
 }
 
-.creativity {
+.verge-image {
+  /*   width: 400px; */
+  width: 250px;
+  max-height: auto;
+  object-fit: auto;
+  /*     padding-bottom: 20px; */
+  /*     padding: 10px; */
+  margin-top: 20px;
+  /*   margin-bottom: 20px; */
+  border-radius: 20px 20px 20px 20px;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+/* .This-month {
   line-height: 1.6;
   background-color: white;
   padding: 10px;
-}
+} */
 
-.try-these-links {
+/* .try-these-links {
   display: grid;
   grid-template-columns: 1;
   margin-top: 15px;
   padding: 10px;
-}
-
-.glut {
-  display: grid;
-  grid-template-columns: 3;
-  margin-top: 15px;
-  padding: 10px 10px 20px 10px;
-  background-color: #dcdcdc;
-}
+} */
 
 .glut-box {
   display: flex;
   flex-direction: row;
+  /*   width: 500px; */
+  width: 300px;
+  /*      max-height: 800px; */
+  text-align: center;
   justify-content: space-around;
   align-items: top;
-  font-size: 26px;
-  color: #c4aead;
-  margin-top: 15px;
-  padding: 10px 10px 20px 10px;
-  background-color: #dcdcdc;
+  font-size: 22px;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*       border: 5px solid red; */
 }
 
-.glut-box-one {
-  background-color: white;
-  padding: 20px;
+.underline-title-glut {
+  border-bottom: 4px solid;
+  border-color: #c4aead;
 }
 
-.glut-box-two {
-  background-color: white;
-  padding: 20px;
-}
-
-.glut-box-three {
-  background-color: white;
-  padding: 20px;
-}
+/* .glut-box-one {
+  width: 500px;
+   max-height: 800px;
+  padding: 10px;
+    border: 5px solid brown;
+} */
 
 /* MOBILE RESPONSIVENESS MOBILE PORTRAIT */
 /* IDEAS AND INSPIRATION: 1 COLUMN */
 @media screen and (max-width: 320px) {
+  .ideas-inspiration {
+/*  display: grid;
+    grid-template-columns: repeat(1, 1fr);
+        width: 300px;
+    grid-gap: 20px;
+    padding: 15px; */
+  }
+  
   .ideas-box {
+/*     .ideas-inspiration { */
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+        width: 300px;
     grid-gap: 20px;
     padding: 15px;
   }
@@ -561,6 +626,7 @@ h3 {
   .ideas-box {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+           width: 300px;
     grid-gap: 20px;
     padding: 15px;
   }
@@ -571,7 +637,8 @@ h3 {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .ideas-box {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+       width: 300px;
     grid-gap: 20px;
     padding: 15px;
   }
@@ -583,11 +650,317 @@ h3 {
   .ideas-box {
     display: flex;
     flex-wrap: wrap;
-    /*     grid-template-columns: repeat(2, 1fr); */
+        grid-template-columns: repeat(4 1fr);
+   width: 300px;
     grid-gap: 20px;
     padding: 15px;
   }
 }
+
+.carousels {
+  /*    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  background-color: white;
+  /*   border: 5px solid yellow; */
+}
+
+.underline-title-month {
+  border-bottom: 4px solid;
+  border-color: #c4aead;
+  /*   padding-left: 10px;
+  padding-right: 10px;  */
+  /*       border: 5px solid yellow; */
+}
+
+.myCarousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*   justify-content: center; */
+  justify-content: space-around;
+  /*   width: 500px; */
+  width: 300px;
+  padding-bottom: 30px;
+  margin: auto;
+  /*              border: 1px solid purple; */
+}
+
+.carousel-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+/*   line-height: 1.6; */
+  /*       padding: 10px; */
+  /*   width: 400px; */
+  /*   width: 250px; */
+  width: auto;
+  padding: 10px;
+  /*       width: auto;
+  margin: auto;
+  background-color: white;
+  /*         width: 500px; */
+  /*          border: 3px solid brown;     */
+}
+
+.carousel-image {
+  /*   width: 400px; */
+  width: 250px;
+  max-height: auto;
+  object-fit: auto;
+  /*     padding-bottom: 20px; */
+  /*     padding: 10px; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px 20px 20px 20px;
+  border-collapse: collapse;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.recipe-link {
+  align-items: center;
+  justify-content: center;
+}
+
+.transition-arrow-dot {
+  display: flex;
+  justify-content: space-evenly;
+  /*      border: 1px solid blue; */
+}
+
+/* Hide the images by default */
+/* .mySlides {
+  display: none;
+} */
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: relative;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #c4aead;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  color: hotpink;
+  font-size: 30px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: hotpink;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* MONTH CAROUSEL */
+
+/* .carousels {
+    background-color: white;
+     border: 1px solid blue;
+} */
+
+.month-plus-dots {
+  display: flex;
+  flex-direction: column;
+  /*     flex-direction: row; */
+  width: 300px;
+  text-align: center;
+  /*   justify-content: space-around; */
+  justify-content: center;
+  align-items: top;
+  font-size: 22px;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*         border: 5px solid green; */
+}
+
+/* .myCarousel-month {
+  width: 500px;
+  margin: auto;
+  border: 5px solid orange;
+     } */
+
+.This-month {
+  display: flex;
+  flex-direction: column;
+  /*      width: 300px; */
+  width: auto;
+  text-align: center;
+  /*   justify-content: space-around; */
+  justify-content: center;
+  align-items: top;
+  /*     align-items: center; */
+  font-size: 22px;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*       padding: 10px; */
+  /*           border: 5px solid pink; */
+}
+
+.month-image {
+  width: 250px;
+  max-height: auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 20px 20px 20px 20px;
+  border-collapse: collapse;
+  overflow: hidden;
+  padding: 10px;
+  object-position: center;
+  align-items: center;
+  text-align: center;
+  text-wrap: wrap;
+  justify-content: center;
+}
+
+.try-these-links-month {
+  display: grid;
+  grid-template-columns: 1;
+  line-height: 1.6;
+  /*   width: 400px; */
+  /*   width: 300px; */
+  width: auto;
+  object-position: center;
+  align-items: center;
+  text-align: center;
+  text-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  /*   padding: 10px; */
+  /*   margin-top: 15px; */
+  /*   border: 1px solid orange; */
+}
+
+/* .month-link {
+  display: grid;
+  grid-template-columns: 1;
+  margin-top: 15px;
+  padding: 10px;
+  align-items: center;
+   text-align: center;
+  justify-content: center;
+    border: 10px solid blue;
+} */
+
+.transition-arrow-dot-month {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Hide the images by default */
+.mySlidesMonth {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev-month,
+.next-month {
+  cursor: pointer;
+  position: relative;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #c4aead;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.arrows-month {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev-month:hover,
+.next-month:hover {
+  color: hotpink;
+  font-size: 30px;
+}
+
+/* The dots/bullets/indicators */
+.dot-month {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot-month:hover {
+  background-color: hotpink;
+}
+
+/* Fading animation */
+/* .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+
+/* END MONTH CAROUSEL */
 
 /* IDEAS AND INSPIRATION FINISH */
 
@@ -604,83 +977,6 @@ h3 {
   flex-wrap: wrap;
   margin-bottom: 10px;
 }
-
-/* ADD TASK LIST */
-/* .task-list {
-  font-size: 18px;
-  background-color: #dcdcdc;
-  padding: 10px;
-} */
-
-/* .task-header {
-  display: flex;
-  background-color: #fff;
-  padding: 20px 20px;
-  text-align: center;
-} */
-
-/* #myInput {
-  margin: 10px;
-  border: 1px #dcdcdc;
-  width: 75%;
-  padding: 10px;
-  float: left;
-  font-size: 24px;
-  border-radius: 5%;
-} */
-
-/* Style the "Add" button */
-/* .addBtn {
-  margin: 10px;
-  border: 100px red;
-  padding: 5px;
-  width: 25%;
-  background: #d9d9d9;
-  color: #555;
-  float: left;
-  text-align: center;
-  font-size: 24px;
-  cursor: pointer;
-  border-radius: 10%;
-} */
-
-/* .addBtn:hover {
-  background-color: #c4aead;
-} */
-
-/* Style the list items */
-/* ul li {
-  cursor: pointer;
-  position: relative;
-  padding: 12px 12px 12px 12px;
-  list-style-type: none;
-  background: #c4aead;
-  font-size: 30px;
-  height: 30px;
-} */
-
-/* Darker background-color on hover */
-/* ul li:hover {
-  background: #dcdcdc;
-} */
-
-/* Style the close button */
-/* .close-task {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 12px 12px 12px 12px;
-  font-size: 30px;
-  height: 30px;
-} */
-
-/* Clear floats after the header */
-/* .header:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
-/* FINISH TASK LIST */
 
 .how-topic {
   display: flex;
