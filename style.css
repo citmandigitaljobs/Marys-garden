@@ -659,6 +659,7 @@ h3 {
      justify-content: left; */
     display: flex;
     justify-content: flex-wrap;
+            justify-content: center;
   }
 
   .ideas-box {
@@ -666,6 +667,7 @@ h3 {
     grid-template-columns: repeat(4, 1fr); */
      display: flex;
     justify-content: flex-wrap;
+    align-items: center;
     /*   display: flex;
   flex-wrap: wrap;
   flex-direction: column; */
@@ -677,105 +679,10 @@ h3 {
   }
 }
 
-/* MOBILE RESPONSIVENESS TABLET PORTRAIT */
-/* SEASON GRID: 2 COLUMNS */
-/* @media screen and (min-width: 481px) and (max-width: 768px) {
-  .season-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    padding: 15px;
-  }
-} */
-
-/* MOBILE RESPONSIVENESS MOBILE PORTRAIT */
-/* IDEAS AND INSPIRATION: 2 COLUMNS */
-/* @media screen and (max-width: 320px) {
-   .ideas { */
-    /*     display: grid;
-     justify-content: left; */
-/*     display: flex;
-    justify-content: flex-start;
-  } */
-  
-/*   .ideas-inspiration { */
-/*    display: flex;
-    justify-content: flex-start; */
-/*     display: flex;
-    justify-content: start; */
-  
-/*   .ideas-box { */
-/*     display: grid;
-    grid-template-columns: repeat(4, 1fr); */
-/*     display: flex;
-    justify-content: flex-start; */
-    /*   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column; */
-/*     max-width: 250px; */
-/*     align-items: center;
-    justify-content: space-evenly; */
-    /*     grid-gap: 20px; */
-/*     padding: 15px; */
-/*   }
-} */
-
-/* MOBILE RESPONSIVENESS MOBILE PORTRAIT */
-/* IDEAS AND INSPIRATION: 1 COLUMN */
-/* @media screen and (max-width: 320px) { 
-   .ideas-box {
-display: grid;
-    grid-template-columns: repeat(4, 1fr); */
-/*   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column; */
-/*            max-width: 320px;
-       align-items: center;
- justify-content: space-around; */
-/*     grid-gap: 20px; */
-/*     padding: 15px;
-  }} */
-
-/*   @media screen and (max-width: 320px) { 
-  .ideas-box { */
-/*  display: grid;
-    grid-template-columns: repeat(4, 1fr); */
-/*   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-           max-width: 300px;
-       align-items: center;
- justify-content: space-around;
-    grid-gap: 20px;
-    padding: 15px; */
-
-/* MOBILE RESPONSIVENESS MOBILE LANDSCAPE */
-/* SEASON GRID: 1 COLUMN */
-/* @media screen and (max-width: 480px) {
-  .season-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
-    padding: 15px;
-  }
-} */
-
-
-
-/* MOBILE RESPONSIVENESS TABLET LANDSCAPE */
-/* SEASON GRID: 2 COLUMNS */
-/* @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .season-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    padding: 15px;
-  }
-} */
 
 /* MOBILE RESPONSIVENESS MOBILE LANDSCAPE */
 /* IDEAS AND INSPIRATION: 1 COLUMN */
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 321px) and (max-width: 480px) {
   .ideas.box {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -789,6 +696,7 @@ display: grid;
   .ideas-inspiration {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+                justify-content: center;
     max-width: auto;
     grid-gap: 20px;
     padding: 15px;
@@ -841,7 +749,7 @@ display: grid;
 
 /* MOBILE RESPONSIVENESS TABLET PORTRAIT */
 /* IDEAS AND INSPIRATION: 2 COLUMNS*/
-@media screen and (min-width: 540px) and (max-width: 600px) {
+@media screen and (min-width: 541px) and (max-width: 600px) {
   .ideas-box {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
