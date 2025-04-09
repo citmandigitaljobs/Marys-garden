@@ -640,9 +640,9 @@ h3 {
   .ideas-box {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /*   display: flex;
+      display: flex;
   flex-wrap: wrap;
-  flex-direction: column; */
+  flex-direction: column;
     max-width: 250px;
     align-items: center;
     justify-content: space-evenly;
@@ -920,7 +920,7 @@ display: grid;
 @media screen and (min-width: 768px) and (max-width: 850px) {
   .ideas-box {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
       justify-content: center;
     width: 300px;
     grid-gap: 20px;
