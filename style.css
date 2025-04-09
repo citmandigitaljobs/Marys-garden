@@ -845,10 +845,21 @@ display: grid;
   }
 }
 
-@media screen and (min-width: 620px) and (max-width: 767px) {
+@media screen and (min-width: 620px) and (max-width: 667px) {
   .ideas-box {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    width: 300px;
+    grid-gap: 20px;
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 668px) and (max-width: 767px) {
+  .ideas-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     width: 300px;
     grid-gap: 20px;
