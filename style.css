@@ -703,8 +703,7 @@ h3 {
     justify-content: flex-start; */
 /*     display: flex;
     justify-content: start; */
-  }
-
+  
 /*   .ideas-box { */
 /*     display: grid;
     grid-template-columns: repeat(4, 1fr); */
@@ -798,12 +797,43 @@ display: grid;
 
 /* MOBILE RESPONSIVENESS TABLET PORTRAIT */
 /* IDEAS AND INSPIRATION: 2 COLUMNS*/
-@media screen and (min-width: 481px) and (max-width: 540px) {
+@media screen and (min-width: 481px) and (max-width: 500px) {
   .ideas-box {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
         justify-content: center;
     width: 300px;
+    grid-gap: 20px;
+    padding: 15px;
+  }
+  
+   .ideas-inspiration {
+     display: grid;
+    grid-template-columns: repeat(1, 1fr);
+          justify-content: center;
+    max-width: auto;
+    grid-gap: 20px;
+    padding: 15px;
+  }
+}
+
+/* MOBILE RESPONSIVENESS TABLET PORTRAIT */
+/* IDEAS AND INSPIRATION: 2 COLUMNS*/
+@media screen and (min-width: 501px) and (max-width: 540px) {
+  .ideas-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    width: 300px;
+    grid-gap: 20px;
+    padding: 15px;
+  }
+  
+   .ideas-inspiration {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+          justify-content: center;
+    max-width: auto;
     grid-gap: 20px;
     padding: 15px;
   }
@@ -820,13 +850,22 @@ display: grid;
     grid-gap: 20px;
     padding: 15px;
   }
+  
+  .ideas-inspiration {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+          justify-content: center;
+    max-width: auto;
+    grid-gap: 20px;
+    padding: 15px;
+  }
 }
 
 /* MOBILE RESPONSIVENESS TABLET LANDSCAPE */
 /* IDEAS AND INSPIRATION: 2 COLUMNS*/
 @media screen and (min-width: 600px) and (max-width: 620px) {
   .ideas.box {
-    display: grid;
+       display: grid;
     grid-template-columns: repeat(1, 1fr);
         justify-content: center;
     /*         width: 300px; */
@@ -838,7 +877,8 @@ display: grid;
   
     .ideas-inspiration {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+          justify-content: center;
     max-width: auto;
     grid-gap: 20px;
     padding: 15px;
@@ -848,18 +888,28 @@ display: grid;
 @media screen and (min-width: 620px) and (max-width: 667px) {
   .ideas-box {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     width: 300px;
     grid-gap: 20px;
     padding: 15px;
   }
+  
+  .ideas-inspiration {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    max-width: auto;
+    grid-gap: 20px;
+    padding: 15px;
+  }
+  
 }
 
 @media screen and (min-width: 668px) and (max-width: 767px) {
   .ideas-box {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     width: 300px;
     grid-gap: 20px;
