@@ -776,7 +776,7 @@ display: grid;
 /* MOBILE RESPONSIVENESS MOBILE LANDSCAPE */
 /* IDEAS AND INSPIRATION: 1 COLUMN */
 @media screen and (max-width: 480px) {
-  .ideas {
+  .ideas.box {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
         justify-content: center;
@@ -868,7 +868,7 @@ display: grid;
        display: grid;
     grid-template-columns: repeat(1, 1fr);
         justify-content: center;
-    /*         width: 300px; */
+            width: 300px;
     max-width: auto;
     grid-gap: 40px;
     padding: 15px;
