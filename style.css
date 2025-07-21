@@ -612,38 +612,31 @@ h3 {
   border-color: #c4aead;
 }
 
-/* .glut-box-one {
-  width: 500px;
-   max-height: 800px;
-  padding: 10px;
-    border: 5px solid brown;
-} */
 
 /* MOBILE RESPONSIVENESS MOBILE PORTRAIT */
 /* IDEAS AND INSPIRATION: 1 COLUMN */
 @media screen and (max-width: 250px) {
  
    .ideas {
-    /*     display: grid;
-     justify-content: left; */
-    display: flex;
-    justify-content: flex-start;
+   display: grid;
+    grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
   }
   
   .ideas-inspiration {
-    /*     display: grid;
-     justify-content: left; */
-/*     display: flex;
-    justify-content: flex-start; */
+        display: grid;
+    grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
   }
 
   .ideas-box {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-      display: flex;
+    grid-template-columns: repeat(1, 1fr);
+    align-content: center;
+/*       display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-    max-width: 250px;
+  flex-direction: column; */
+    max-width: 300px;
     align-items: center;
     justify-content: space-evenly;
     /*     grid-gap: 20px; */
@@ -653,28 +646,17 @@ h3 {
 
 /* MOBILE RESPONSIVENESS MOBILE PORTRAIT */
 /* IDEAS AND INSPIRATION: 1 COLUMN */
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 251px) and (max-width: 319px) {
   .ideas-inspiration {
-    /*     display: grid;
-     justify-content: left; */
-    display: flex;
-    justify-content: flex-wrap;
-            justify-content: center;
+   display: grid;
+    grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
   }
 
   .ideas-box {
-/*     display: grid;
-    grid-template-columns: repeat(4, 1fr); */
-     display: flex;
-    justify-content: flex-wrap;
-    align-items: center;
-    /*   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column; */
-/*     max-width: 250px; */
-/*     align-items: center; */
-/*     justify-content: space-evenly; */
-    /*     grid-gap: 20px; */
+display: grid;
+    grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
     padding: 15px;
   }
 }
@@ -685,22 +667,23 @@ h3 {
 @media screen and (min-width: 321px) and (max-width: 480px) {
   .ideas.box {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
         justify-content: center;
-    /*         width: 300px; */
-    max-width: auto;
-    /*     grid-gap: 20px; */
+        width: 300px;
+    grid-gap: 20px;
     padding: 15px;
+
   }
 
   .ideas-inspiration {
-    display: grid;
+   display: grid;
     grid-template-columns: repeat(1, 1fr);
-                justify-content: center;
-    max-width: auto;
+        justify-content: center;
+    width: 300px;
     grid-gap: 20px;
     padding: 15px;
-  }
+
+      }
 }
 
 /* MOBILE RESPONSIVENESS TABLET PORTRAIT */
@@ -713,15 +696,17 @@ h3 {
     width: 300px;
     grid-gap: 20px;
     padding: 15px;
+        border: 10px solid green;
   }
   
    .ideas-inspiration {
      display: grid;
     grid-template-columns: repeat(1, 1fr);
           justify-content: center;
-    max-width: auto;
+/*     max-width: auto;
     grid-gap: 20px;
-    padding: 15px;
+    padding: 15px; */
+              border: 10px solid blue;
   }
 }
 
@@ -823,6 +808,14 @@ h3 {
     grid-gap: 20px;
     padding: 15px;
   }
+   .ideas-inspiration {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    max-width: auto;
+    grid-gap: 20px;
+    padding: 15px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 850px) {
@@ -831,6 +824,14 @@ h3 {
     grid-template-columns: repeat(1, 1fr);
       justify-content: center;
     width: 300px;
+    grid-gap: 20px;
+    padding: 15px;
+  }
+   .ideas-inspiration {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    max-width: auto;
     grid-gap: 20px;
     padding: 15px;
   }
