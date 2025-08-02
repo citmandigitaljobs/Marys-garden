@@ -529,13 +529,14 @@ h3 {
 .space {
   display: grid;
   grid-template-columns: 1;
+  line-height: 175%;
   margin-top: 10px;
   /*             border: 1px solid green; */
 }
 
 .no-space-image {
   width: 250px;
-  max-height: auto;
+   max-height: auto;
   object-fit: auto;
   padding-bottom: 20px;
   padding: 10px;
@@ -559,6 +560,7 @@ h3 {
   display: grid;
   /*     width: 500px; */
   grid-template-columns: 1;
+    line-height: 175%;
   margin-top: 15px;
   padding: 10px;
   /*               border: 1px solid green; */
@@ -882,7 +884,7 @@ display: grid;
   margin: auto;
   background-color: white;
   /*         width: 500px; */
-  /*          border: 3px solid brown;     */
+/*            border: 3px solid brown;     */
 }
 
 .carousel-image {
@@ -1021,7 +1023,7 @@ display: grid;
   padding-left: 10px;
   padding-right: 10px;
   /*       padding: 10px; */
-  /*           border: 5px solid pink; */
+/*             border: 5px solid pink; */
 }
 
 .month-image {
@@ -1043,7 +1045,8 @@ display: grid;
 .try-these-links-month {
   display: grid;
   grid-template-columns: 1;
-  line-height: 1.6;
+/*   line-height: 1.6; */
+      line-height: 175%;
   /*   width: 400px; */
   /*   width: 300px; */
   width: auto;
@@ -1055,7 +1058,7 @@ display: grid;
   background-color: white;
   /*   padding: 10px; */
   /*   margin-top: 15px; */
-  /*   border: 1px solid orange; */
+/*     border: 1px solid orange; */
 }
 
 /* .month-link {
@@ -1162,6 +1165,7 @@ display: grid;
   display: flex;
   flex-direction: column;
   /*  CHANGE WIDTH FOR BETTER PRESENTATION ON DESKTOP  width: 200px;  */
+    line-height: 175%;
   width: 300px;
   margin: 10px;
   padding: 15px;
@@ -1201,11 +1205,12 @@ display: grid;
 }
 
 a:link {
-  color: #686b69;
+  color: hotpink;
+  font-weight: bold;
   text-decoration: none;
-}
+ }
 a:visited {
-  color: #686b69;
+  color: #800080;
 }
 
 a:hover {
