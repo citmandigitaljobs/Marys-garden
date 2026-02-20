@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
   <meta charset="UTF-8">
@@ -8,19 +8,32 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <style>
-    
-<!--     colour palette https://colorhunt.co/palette/001a6e074799009990e1ffbb  -->
     body {
       font-family: 'Akatab';
       font-size: 22px;
     }
   </style>
-  <title>Kieran's Vegie Garden!</title>
+  <title>Mary’s Masterpiece</title>
   <!--STYLE.CSS FILE LINK HERE -->
   <link rel="stylesheet" href="./style.css" />
+  <!-- TRY JS FILE HERE BASED ON STACK OVERFLOW https://stackoverflow.com/questions/68424003/modal-box-opens-on-codepen-but-not-on-localhost -->
   <!-- INCLUDE defer SO DIRECT BROWSER THAT THE SCRIPT IS MEANT TO BE EXECUTED AFTER THE DOCUMENT HAS BEEN PARSED-->
   <script src="./main.js" defer></script>
 </head>
+
+<!--MAIN.JS FILE LINK HERE -->
+<!-- <script src="./main.js"></script> -->
+
+<ul class="page-navigation">
+  <li><a href="#now">What's happening now</a></li>
+  <li><a href="#weather">Weather</a></li>
+  <li><a href="#plan">Planning ahead</a></li>
+  <li><a href="#ideas">Ideas and inspiration</a></li>
+  <li><a href="#how">How do I...</a></li>
+  <li><a href="#favourites">My favourites</a></li>
+  <li><a href="#journal">My journal</a></li>
+  <li><a href="mailto:catherine.itman@gmail.com">Website feedback</a></li>
+</ul>
 
 <!--            PUT HAMBURGER MENU AT TOP  -->
 <div class="topnav" id="topMenu">
@@ -30,9 +43,12 @@
     <!-- NAVIGATION LINKS -->
     <nav id="myLinks">
       <a href="#top">Go to top</a>
-      <a href="#now">Seasonal planting</a>
+      <a href="#now">What's happening now</a>
       <a href="#weather">Weather</a>
-      <a href="#ideas">Boosting nature's work</a>
+      <a href="#plan">Planning ahead</a>
+      <a href="#ideas">Ideas and inspiration</a>
+      <a href="#how">How do I</a>
+      <a href="#favourites">My favourites</a>
       <a href="#journal">My journal</a>
     </nav>
   </a>
@@ -43,473 +59,706 @@
   <header>
     <div class="topflexbox" id="top">
       <div class="exclude-menu">
+        <h1>Mary's Masterpiece</h1>
         <div class="topflexbox-limerick">
-          <p> My nephew wants to grow<br>
-            Some vegies in his backyard<br>
-            Here are ideas to show<br>
-            That it won't be very hard!<br>
-            The plants need time to grow<br>
-            So be patient as you wait<br>
-            When the time is right, you’ll know<br>
-            And your reward will be GREAT!<br>
-          </p>
+          <p> Starting with clay and stone<br>
+            Ideas for a garden were sown<br>
+            After years of hard yakka<br>
+            Our Mum is <u>no slacker!</u><br>
+            Now see how her garden has grown!</p>
         </div>
-      </div>
-      <div class="heading">
-        <h1>Kieran's Vegie Patch</h1>
       </div>
     </div>
   </header>
 
   <main>
-    <div class="happening-now-section">
-      <h2 class="what-now">What can I plant now?</h2>
-      <!-- ---------------- -->
-      <!--       START OF SEASON CAROUSEL -->
+    <div class="happening-now-section" id="now">
+      <h2 class="what-now"> What's happening now?</h2>
+
       <div class="season-grid">
-        <section class="season-box">
+        <section class="Season-box">
           <div class="season">
-            <p class="season-name">SPRING</p>
-            <img class="season-icon" src="https://i.imgur.com/Lk6XVJP.jpeg" alt="spring">
-            <!-- Trigger/Open The Modal -->
-            <button id="buttonOne">Plant these!</button>
-            <!-- The Modal -->
-            <div id="modalOne" class="modal">
-              <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close-one">
-                  <h4>X</h4>
-                </span>
-              </div>
+            <p class="season-name">SPR<u>ING</u></p>
+            <div class="image-plus-modal">
+              <img src="https://i.imgur.com/4N2DaFW.jpg" alt="Spring" class="image">
+              <!--                       ADD MODAL       -->
+              <!-- OPEN MODAL -->
+              <button class="myBtn_multi">Plant now</button>
+              <!-- The Modal -->
 
-              <!--   START SEASON CAROUSEL -->
-              <section class="carousel">
-                <!--                 ------------- -->
-                
-                <div class="spring-topic">
-                                    <div class="season-topic-title">
-                    <h2>Beans</h2>
-                    <img class="season-image" src="https://i.imgur.com/9rRPbcP.jpeg" alt="climbing beans">
-                    <div class="caption">
-                      <p>These will quickly get taller than you!</p>
-                    </div>
-                  </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="spring-topic">
-                  <div class="season-topic-title">
-                    <h2>Lettuce</h2>
-                    <img class="season-image" src="https://i.imgur.com/u9CChcB.jpeg" alt="red rose seated stretch">
-                    <div class="caption">
-                      <p>Snails love lettuce too, so beware</p>
-                    </div>
-                  </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="spring-topic">
-                  <div class="season-topic-title">
-                    <h2>Carrots</h2>
-                    <img class="season-image" src="https://i.imgur.com/p8XLb3G.jpeg" alt="red rose seated stretch">
-                    <div class="caption">
-                      <p>It's a 3 week wait for these to show...</p>
-                    </div>
-                  </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="spring-topic">
-                  <div class="season-topic-title">
-                    <h2>Coriander</h2>
-                    <img class="season-image" src="https://i.imgur.com/jUUaLLH.jpeg" alt="coriander">
-                    <div class="caption">
-                      <p>You can even eat the flowers!</p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <!-- ---------------- -->
-              <div class="transition-arrow-dot-spring">
-                <div class="arrows-spring">
-                  <a class="prev-spring" onclick="plusSlideSpringTopic(-1)">&#10094;</a>
-                  <br>
-
-                  <!-- The dots/circles -->
-                  <div class="dot-season">
-                    <section class="separate-dots-from-image">
-                      <div style="text-align:center">
-                        <span class="dot-spring" onclick="currentSlideSpringTopic(1)"></span>
-                        <span class="dot-spring" onclick="currentSlideSpringTopic(2)"></span>
-                        <span class="dot-spring" onclick="currentSlideSpringTopic(3)"></span>
-                        <span class="dot-spring" onclick="currentSlideSpringTopic(4)"></span>
-                      </div>
-                    </section>
-                  </div>
-                  <a class="next-spring" onclick="plusSlideSpringTopic(1)">&#10095;</a>
+              <div class="modal modal_multi">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <!--               <span class="close">&times;</span> -->
+                  <span class="close close_multi"><b>CLOSE</b></span>
+                  <p>Asparagus</p>
+                  <p>Artichokes</p>
+                  <p>Basil</p>
+                  <p>Beans</p>
+                  <p>Beetroot</p>
+                  <p>Bok choy</p>
+                  <p>Capsicum</p>
+                  <p>Carrots</p>
+                  <p>Celery</p>
+                  <p>Chilli</p>
+                  <p>Cucumber</p>
+                  <p>Eggplant</p>
+                  <p>Lettuce</p>
+                  <p>Pak choy</p>
+                  <p>Parsnip</p>
+                  <p>Peas</p>
+                  <p>Potatoes</p>
+                  <p>Pumpkin</p>
+                  <p>Radish</p>
+                  <p>Rhubarb</p>
+                  <p>Silverbeet</p>
+                  <p>Snow pea</p>
+                  <p>Spinach</p>
+                  <p>Spring onion</p>
+                  <p>Strawberries</p>
+                  <p>Sweet potato</p>
+                  <p>Tomato</p>
+                  <p>Turnips</p>
+                  <p>Zucchini</p>
                 </div>
               </div>
-              <!-- END Next and previous buttons -->
-            </div>
-          </div>
-
-          <!--     ------------- -->
-          <div class="season">
-            <p class="season-name">SUMMER</p>
-            <img class="season-icon" src="https://i.imgur.com/yq6YrNf.jpeg" alt="summer">
-            <!-- Trigger/Open The Modal -->
-            <button id="buttonTwo">Plant these!</button>
-            <!-- The Modal -->
-            <div id="modalTwo" class="modal">
-              <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close-two">
-                  <h4>X</h4>
-                </span>
-              </div>
-
-              <!--   START SEASON CAROUSEL -->
-              <section class="carousel">
-                <div class="summer-topic">
-                  <div class="season-topic-title">
-                    <h2>Beanssummer</h2>
-                    <img class="season-image" src="https://i.imgur.com/9rRPbcP.jpeg" alt="climbing beans">
-                    <div class="caption">
-                      <p>These will quickly get taller than you!</p>
-                    </div>
-                  </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="summer-topic">
-                  <div class="season-topic-title">
-                    <h2>Lettucesummer</h2>
-                    <img class="season-image" src="https://i.imgur.com/u9CChcB.jpeg" alt="red rose seated stretch">
-                    <div class="caption">
-                      <p>Snails love lettuce too, so beware</p>
-                    </div>
-                  </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="summer-topic">
-                  <div class="season-topic-title">
-                    <h2>Carrotssummer</h2>
-                    <img class="season-image" src="https://i.imgur.com/p8XLb3G.jpeg" alt="carrot seedlings">
-                    <div class="caption">
-                      <p>It's a 3 week wait for these to show...</p>
-                    </div>
-                  </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="summer-topic">
-                  <div class="season-topic-title">
-                    <h2>Coriander</h2>
-                    <img class="season-image" src="https://i.imgur.com/jUUaLLH.jpeg" alt="coriander">
-                    <div class="caption">
-                      <p>You can eat the leaves, stem and flowers, yum</p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <!-- ---------------- -->
-              <div class="transition-arrow-dot-summer">
-                <div class="arrows-summer">
-                  <a class="prev-summer" onclick="plusSlideSummerTopic(-1)">&#10094;</a>
-                  <br>
-
-                  <!-- The dots/circles -->
-                  <!-- <section class = "separate-dots-from-image"> -->
-                  <div class="dot-season">
-                    <section class="separate-dots-from-image">
-                      <div style="text-align:center">
-                        <span class="dot-summer" onclick="currentSlideSummerTopic(1)"></span>
-                        <span class="dot-summer" onclick="currentSlideSummerTopic(2)"></span>
-                        <span class="dot-summer" onclick="currentSlideSummerTopic(3)"></span>
-                        <span class="dot-summer" onclick="currentSlideSummerTopic(4)"></span>
-                      </div>
-                    </section>
-                  </div>
-                  <a class="next-summer" onclick="plusSlideSummerTopic(1)">&#10095;</a>
-                </div>
-              </div>
-              <!-- END Next and previous buttons -->
-            </div>
-          </div>
-
-          <!--     ------------- -->
-          <div class="season">
-            <p class="season-name">AUTUMN</p>
-            <img class="season-icon" src="https://i.imgur.com/d7YLUBx.jpeg" alt="autumn">
-            <!-- Trigger/Open The Modal -->
-            <button id="buttonThree">Plant these!</button>
-            <!-- The Modal -->
-            <div id="modalThree" class="modal">
-              <!-- Modal content -->
-           <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close-three">
-                  <h4>X</h4>
-                </span>
-              </div>
-              
-              <!--   START SEASON CAROUSEL -->
-              <section class="carousel">
-                <div class="autumn-topic">
-                  <div class="season-topic-title">
-                    <h2>Beansautumn</h2>
-                    <img class="season-image" src="https://i.imgur.com/9rRPbcP.jpeg" alt="climbing beans">
-                    <div class="caption">
-                      <p>These will quickly get taller than you!</p>
-                    </div>
-                  </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="autumn-topic">
-                  <div class="season-topic-title">
-                    <h2>Lettuceautumn</h2>
-                    <img class="season-image" src="https://i.imgur.com/u9CChcB.jpeg" alt="red rose seated stretch">
-                    <div class="caption">
-                      <p>Snails love lettuce too, so beware</p>
-                    </div>
-                  </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="autumn-topic">
-                  <div class="season-topic-title">
-                    <h2>Carrotsautumn</h2>
-                    <img class="season-image" src="https://i.imgur.com/p8XLb3G.jpeg" alt="carrot seedlings">
-                    <div class="caption">
-                      <p>It's a 3 week wait for these to show...</p>
-                    </div>
-                  </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="autumn-topic">
-                  <div class="season-topic-title">
-                    <h2>Coriander</h2>
-                    <img class="season-image" src="https://i.imgur.com/jUUaLLH.jpeg" alt="coriander">
-                    <div class="caption">
-                      <p>You can eat the leaves, stem and flowers, yum</p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <!-- ---------------- -->
-              <div class="transition-arrow-dot-autumn">
-                <div class="arrows-autumn">
-                  <a class="prev-autumn" onclick="plusSlideAutumnTopic(-1)">&#10094;</a>
-                  <br>
-
-                  <!-- The dots/circles -->
-                  <!-- <section class = "separate-dots-from-image"> -->
-                  <div class="dot-season">
-                    <section class="separate-dots-from-image">
-                      <div style="text-align:center">
-                        <span class="dot-autumn" onclick="currentSlideAutumnTopic(1)"></span>
-                        <span class="dot-autumn" onclick="currentSlideAutumnTopic(2)"></span>
-                        <span class="dot-autumn" onclick="currentSlideAutumnTopic(3)"></span>
-                        <span class="dot-autumn" onclick="currentSlideAutumnTopic(4)"></span>
-                      </div>
-                    </section>
-                  </div>
-                  <a class="next-autumn" onclick="plusSlideAutumnTopic(1)">&#10095;</a>
-                </div>
-              </div>
-              <!-- END Next and previous buttons -->
-            </div>
-
-          </div>
-
-          <!--     ------------- -->
-          <div class="season">
-            <p class="season-name">WINTER</p>
-            <img class="season-icon" src="https://i.imgur.com/fGPyRfX.jpeg" alt="winter">
-            <!-- Trigger/Open The Modal -->
-            <button id="buttonFour">Plant these!</button>
-            <!-- The Modal -->
-            <div id="modalFour" class="modal">
-              <!-- Modal content -->
-              <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close-four">
-                  <h4>X</h4>
-                </span>
-              </div>
-
-              <!--   START SEASON CAROUSEL -->
-              <section class="carousel">
-                <div class="winter-topic">
-                  <div class="season-topic-title">
-                    <h2>Beanswinter</h2>
-                    <img class="season-image" src="https://i.imgur.com/9rRPbcP.jpeg" alt="climbing beans">
-                    <div class="caption">
-                      <p>These will quickly get taller than you!</p>
-                    </div>
-                  </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="winter-topic">
-                  <div class="season-topic-title">
-                    <h2>Lettucewinter</h2>
-                    <img class="season-image" src="https://i.imgur.com/u9CChcB.jpeg" alt="red rose seated stretch">
-                    <div class="caption">
-                      <p>Snails love lettuce too, so beware</p>
-                    </div>
-                  </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="winter-topic">
-                  <div class="season-topic-title">
-                    <h2>Carrotswinter</h2>
-                    <img class="season-image" src="https://i.imgur.com/p8XLb3G.jpeg" alt="carrot seedlings">
-                    <div class="caption">
-                      <p>It's a 3 week wait for these to show...</p>
-                    </div>
-                  </div>
-                </div>
-                <!--                 ------------- -->
-                <div class="winter-topic">
-                  <div class="season-topic-title">
-                    <h2>Coriander</h2>
-                    <img class="season-image" src="https://i.imgur.com/jUUaLLH.jpeg" alt="coriander">
-                    <div class="caption">
-                      <p>You can eat the leaves, stem and flowers, yum</p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <!-- ---------------- -->
-              <div class="transition-arrow-dot-winter">
-                <div class="arrows-winter">
-                  <a class="prev-winter" onclick="plusSlideWinterTopic(-1)">&#10094;</a>
-                  <br>
-
-                  <!-- The dots/circles -->
-                  <!-- <section class = "separate-dots-from-image"> -->
-                  <div class="dot-season">
-                    <section class="separate-dots-from-image">
-                      <div style="text-align:center">
-                        <span class="dot-winter" onclick="currentSlideWinterTopic(1)"></span>
-                        <span class="dot-winter" onclick="currentSlideWinterTopic(2)"></span>
-                        <span class="dot-winter" onclick="currentSlideWinterTopic(3)"></span>
-                        <span class="dot-winter" onclick="currentSlideWinterTopic(4)"></span>
-                      </div>
-                    </section>
-                  </div>
-                  <a class="next-winter" onclick="plusSlideWinterTopic(1)">&#10095;</a>
-                </div>
-              </div>
-              <!-- END Next and previous buttons -->
             </div>
           </div>
         </section>
+
+        <section class="Season-box">
+          <div class="season">
+            <p class="season-name">SUM<u>MER</u></p>
+            <div class="image-plus-modal">
+              <img src="https://i.imgur.com/dIEOL31.jpg" alt="Summer" class="image">
+
+              <!--                       ADD MODAL       -->
+              <!-- Trigger/Open The Modal -->
+              <button class="myBtn_multi">Plant now</button>
+              <!-- The Modal -->
+
+              <div class="modal modal_multi">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <!--               <span class="close">&times;</span> -->
+                  <span class="close close_multi"><b>CLOSE</b></span>
+                  <p>Beans</p>
+                  <p>Beetroot</p>
+                  <p>Broccoli</p>
+                  <p>Brussels sprouts</p>
+                  <p>Cabbage</p>
+                  <p>Carrots</p>
+                  <p>Cauliflower</p>
+                  <p>Lettuce</p>
+                  <p>Radish</p>
+                  <p>Silverbeet</p>
+                  <p>Snow pea</p>
+                  <p>Spinach</p>
+                  <p>Sweet potato</p>
+                  <p>Tomato</p>
+                  <p>Turnip</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="Season-box">
+          <div class="season">
+            <p class="season-name">AUT<u>UMN</u></p>
+            <div class="image-plus-modal">
+              <img src="https://i.imgur.com/SLB3vSM.jpg" alt="Autumn" class="image">
+              <!--                       ADD MODAL       -->
+              <!-- Trigger/Open The Modal -->
+              <button class="myBtn_multi">Plant now</button>
+              <!-- The Modal -->
+
+              <div class="modal modal_multi">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <!--               <span class="close">&times;</span> -->
+                  <span class="close close_multi"><b>CLOSE</b></span>
+                  <p>Bok choy</p>
+                  <p>Broad beans</p>
+                  <p>Broccoli</p>
+                  <p>Cabbage</p>
+                  <p>Cauliflower</p>
+                  <p>Garlic</p>
+                  <p>Kale</p>
+                  <p>Leeks</p>
+                  <p>Lettuce</p>
+                  <p>Onion</p>
+                  <p>Pak choy</p>
+                  <p>Peas</p>
+                  <p>Potato</p>
+                  <p>Radish</p>
+                  <p>Snow peas</p>
+                  <p>Spinach</p>
+                  <p>Spring onion</p>
+                  <p>Sugar snap pea</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="Season-box">
+          <div class="season">
+            <p class="season-name">WIN<u>TER</u></p>
+            <div class="image-plus-modal">
+              <img src="https://i.imgur.com/T1l067A.jpg" alt=" Winter" class="image">
+              <!--                       ADD MODAL       -->
+              <!-- Trigger/Open The Modal -->
+              <button class="myBtn_multi">Plant now</button>
+              <!-- The Modal -->
+
+              <div class="modal modal_multi">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <!--               <span class="close">&times;</span> -->
+                  <span class="close close_multi"><b>CLOSE</b></span>
+                  <p>Asparagus</p>
+                  <p>Beetrott</p>
+                  <p>Broccoli</p>
+                  <p>Brussels sprouts</p>
+                  <p>Cabbage</p>
+                  <p>Cauliflower</p>
+                  <p>Coriander</p>
+                  <p>Kale</p>
+                  <p>Onion</p>
+                  <p>Potato</p>
+                  <p>Silverbeet</p>
+                  <p>Spinach</p>
+                  <p>Sugar snap pea</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
       </div>
-      <!--         END OF SEASON CAROUSEL -->
+
+      <!--     <section class="weather-calendar"> -->
+      <!--  WEATHER WIDGET START  ROM https://weatherwidget.io/   -->
+      <section class="weather" id="weather">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/n37d72145d16/eltham/" data-label_1="Eltham" data-label_2="weather" data-font="Roboto" data-theme="pure" data-basecolor="#f3f3f3">Eltham weather</a>
+        <script>
+          ! function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+              js = d.createElement(s);
+              js.id = id;
+              js.src = 'https://weatherwidget.io/js/widget.min.js';
+              fjs.parentNode.insertBefore(js, fjs);
+            }
+          }(document, 'script', 'weatherwidget-io-js');
+        </script>
+      </section>
+      <!--  WEATHER WIDGET END     -->
+
+      <!--  GOOGLE SITE CALENDAR START    -->
+      <section>
+        <div class="calendar-and-moon">
+          <div class="calendar">
+            <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&ctz=Australia%2FMelbourne&showPrint=0&src=OTNkY2ExNDYyZWY4MmNhNmViNDlmOWM3NDI3NzllOTUwMDFiMjliOGJiYWQzZTU0N2ZjZjZiZjdmOTFjMDQxZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4uYXVzdHJhbGlhbiNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=aHQzamxmYWFjNWxmZDYyNjN1bGZoNHRxbDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23AD1457&color=%230B8043&color=%23B39DDB" style="border-width:0" width="100%" height="500" frameborder="0" scrolling="no"></iframe>
+          </div>
+          <!--  GOOGLE SITE CALENDAR END   -->
+
+          <div class="moon-planting-desktop">
+            <!--             <h3>Moon phase planting</h3> -->
+            <div class="moon-phase-descriptions">
+              <div class="underline-moon-title">
+                <h3>Moon phase planting</h3>
+              </div>
+              <div class="moon-image-words">
+                <img class="moon-image" src="https://i.imgur.com/VTXxg2O.jpg" alt="new moon">
+                <div><b>New moon</b>. Wait until a sliver of moon is visible, then plant, graft or transplant leafy plants. Do some pruning and fertilise.</div>
+                <br>
+              </div>
+              <div class="moon-image-words">
+                <img class="moon-image" src="https://i.imgur.com/MbKdqa5.jpg" alt="first quarter moon">
+
+                <div><b>First quarter (waxing) moon</b>. Plant, graft or transplant fruiting plants (like tomatoes, capsicum, beans, peas), and fertilise plants.</div>
+              </div>
+              <div class="moon-image-words">
+                <img class="moon-image" src="https://i.imgur.com/yP4eDPM.jpg" alt="full moon">
+
+                <div><b>Full moon</b>. Plant bulbs and root crops. Prune and harvest. Avoid planging leafy plants.</div>
+              </div>
+              <div class="moon-image-words">
+                <img class="moon-image" src="https://i.imgur.com/HZxgAAK.jpg" alt="last quarter moon">
+
+                <div><b>Last quarter (waning) moon</b>. Weed, cultivate, fertilise . Control pests. Prepare for new planting.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--       <div class="moon-planting-tablet">
+        <h3>Moon phase planting</h3>
+<!--         <div class="moon-phase-content" -->
+        <!--         <p><b>New moon</b>. Wait until a sliver of moon is visible, then plant, graft or transplant leafy plants, do pruning and fertilise.</p>
+        <p><b>First quarter (waxing) moon</b>. Plant, graft or transplant fruiting plants (like tomatoes, capsicum, beans, peas), and fertilise plants.</p>
+        <p><b>Full moon</b>. Plant bulbs and root crops. Prune and harvest. Avoid planting leafy plants.</p>
+        <p><b>Last quarter (waning) moon</b>. Weed, cultivate, fertilise. Control pests. Prepare for new planting</p>
+      </div> -->
+      </section>
+    </div>
+
+    <!--  GOOGLE SITE CALENDAR END      -->
+
+    <div class="planning-ahead-section">
+      <h2 id="plan">Planning ahead</h2>
+      <section class="planning-ahead-boxes">
+        <div class="planning-ahead">
+          <section class="planning-boxes">
+            <div class="planning-topic">
+              <img class="planning-image" src="https://i.imgur.com/Pz07SU7.jpg" alt="bee-1000px-height">
+              <div class="planning-topic"><b>Attract bees</b></div>
+              <a href="https://youtu.be/zqWb55sVQSQ" target="_blank">Flowers for bees</a>
+              <a href="https://youtu.be/5KC9v3wA8lo" target="_blank">Water for bees and butterflies</a>
+            </div>
+          </section>
+
+          <section class="planning-boxes">
+            <div class="planning-topic">
+              <img class="planning-image" src="https://i.imgur.com/zyfZIe3.jpg" alt="ladybird">
+              <div class="planning-topic"><b>Encourage the good and deter the bad</b></div>
+              <a href=" https://youtu.be/Z21qaQCPrII" target="_blank">Pest deterrents</a>
+              <a href=" https://youtu.be/ts3qsHm8GXQ" target="_blank">Good wildlife</a>
+              <a href=" https://youtu.be/iX9mQNswJrw" target="_blank">Pest-repelling plants</a>
+              <a href="  https://www.abc.net.au/gardening/how-to/enticing-the-insects/9435932" target="_blank">Enticing insects</a>
+
+            </div>
+          </section>
+
+          <section class="planning-boxes">
+            <div class="planning-topic">
+              <img class="planning-image" src="https://i.imgur.com/aVg5QIx.jpg" alt="secateurs">
+
+              <div class="planning-topic"><b>Prune to increase fruit yield</b></div>
+              <a href="https://www.marthastewart.com/how-to-prune-a-fig-tree-8778001" target="_blank">Fig trees</a>
+              <a href="https://youtu.be/UXv48997Wsk" target="_blank">Fruit trees</a>
+            </div>
+          </section>
+
+          <section class="planning-boxes">
+            <div class="planning-topic">
+              <img class="planning-image" src="https://i.imgur.com/r4Q3pyM.jpg" alt="zucchini-flower">
+
+              <div class="planning-topic"><b>Hand-pollinate vegies</b></div>
+              <a href="https://youtu.be/Hd4MmbWks2E" target="_blank">Zucchini</a>
+              <a href="https://youtu.be/OUoI15SkD7A" target="_blank">Cucumber</a>
+            </div>
+          </section>
+
+          <section class="planning-boxes">
+            <div class="planning-topic">
+              <img class="planning-image" src="https://i.imgur.com/sSpKkT1.jpg" alt="crop rotation">
+
+              <div class="planning-topic"><b>Crop rotation</b></div>
+              <a href="https://www.abc.net.au/gardening/how-to/crop-rotation/9579146" target="_blank">Roots... fruits... leaves... legumes</a>
+            </div>
+          </section>
+          <section class="planning-boxes">
+            <div class="planning-topic">
+              <img class="planning-image" src="https://i.imgur.com/WNCtKQl.jpg" alt="trowel">
+              <div class="planning-topic"><b>Grow these vegies</b></div>
+              <a href=" https://youtu.be/GvQk6Af6lzg" target="_blank">Beetroot</a>
+              <a href="  https://youtu.be/OV2WKmi3Vj0" target="_blank">And more about beetroot</a>
+            </div>
+          </section>
+        </div>
+      </section>
 
     </div>
-    <!--       </div> -->
-    <!--       </section> -->
-    <!--     </div> -->
-    <!--     </div> -->
 
-    <!-- ---------------- -->
-
-    <section class="weather-calendar">
-      <!--  WEATHER WIDGET START  ROM https://weatherwidget.io/   -->
-      <a class="weatherwidget-io" href="https://forecast7.com/en/n34d04150d77/currans-hill/" data-label_1="CURRANS HILL" data-label_2="WEATHER" data-font="Roboto" data-icons="Climacons Animated" data-mode="Forecast" data-days="3" data-theme="original">Currans Hill weather</a>
-      <script>
-        ! function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (!d.getElementById(id)) {
-            js = d.createElement(s);
-            js.id = id;
-            js.src = 'https://weatherwidget.io/js/widget.min.js';
-            fjs.parentNode.insertBefore(js, fjs);
-          }
-        }(document, 'script', 'weatherwidget-io-js');
-      </script>
-
-    </section>
-    <!--  WEATHER WIDGET END     -->
-
-    <section class="information-container">
-      <div class="information">
-        <h2>Beneficial insects</h2>
-        <div class="image-box">
-        <img class="bee-image-landscape" src="https://i.imgur.com/7bu6pIl.jpeg" alt="bee and ladybird landscape" width="200" height="200">
-          <img class="bee-image-portrait" src="https://i.imgur.com/dDaLDcz.jpeg" alt="bee ladybird portrait" width="80" height="200">
-        </div>
-        <div class="caption">
-          <p>Help these insects and they will help you</p>
-        </div>
+    <section class="ideas">
+      <div class="ideas-inspiration">
+        <h2 id="ideas">Ideas and inspiration...</h2>
       </div>
 
-      <div class="information">
-        <h2>Feed the soil</h2>
-          <div class="image-box">
-        <img class="manure-image" src="https://i.imgur.com/6FGjN9b.jpeg" alt="trowel and manure" width="80" height="200">
-                 </div>
-        <div class="caption">
-          <p>Healthy soil makes healthy plants</p>
+      <section class="ideas-box">
+        <div class="no-space">
+          <div class="underline-title">
+            <h4><b>No space left...</b></h4>
+          </div>
+          <div class="no-space-garden">
+            <img class="no-space-image" src="https://i.imgur.com/AFCokls.jpg" alt="vegie-garden">
+          </div>
+          <div class="space">
+            <a href="https://youtu.be/7UNS_zlxjow" target="_blank">Vertical gardening</a>
+            <a href="https://youtu.be/7UNS_zlxjow" target="_blank">More vertical gardening</a>
+            <a href="https://youtu.be/e_POG-Nc5FA" target="_blank">Three vegies for vertical gardening</a>
+            <a href="https://youtu.be/3Ww2TP_tU7o" target="_blank">Vertical hydroponics</a>
+            <a href="https://youtu.be/Bc4ecvD_rMM" target="_blank">Grow a lot in a small space</a>
+            <a href="https://youtu.be/4mLKPGpCb5Y" target="_blank">Grow more in a small space</a>
+          </div>
         </div>
-      </div>
+
+        <div class="try-these">
+          <div class="underline-title">
+            <h4><b>The last frontier!</b></h4>
+          </div>
+          <div class="verge">
+            <img class="verge-image" src="https://i.imgur.com/IzWTzxc.jpg" alt="nature-strip">
+          </div>
+          <div class="verge-links">
+            <a href="https://www.bunnings.com.au/diy-advice/garden/garden-design/turn-your-nature-strip-into-a-thriving-verge-garden?msockid=1f41f1cbff3e609a1582e2e9fe2e61fd" target="_blank">Make a verge garden</a>
+            <a href="https://www.bhg.com.au/garden/makeovers/charlie-albone-native-verge-garden/" target="_blank">Create a native verge garden</a>
+            <a href="https://youtu.be/O1Abm7nFxbE" target="_blank">Another native verge garden</a>
+            <a href="https://www.abc.net.au/gardening/how-to/starting-a-verge/9433904" target="_blank">Starting a verge garden</a>
+            <a href="https://youtu.be/Ab6T1j65bnM" target="_blank">Making your verge garden thrive</a>
+                      <a href="https://youtu.be/pEBof1n3KqU" target="_blank">Beautify streets with a verge garden</a>
+            <a href="https://www.nillumbik.vic.gov.au/Explore/Environment/Environment-projects-and-programs/Gardens-for-Wildlife" target="_blank">For wildlife (Nillumbik Shire Council)</a>
+          </div>
+        </div>
+        <!--       </section> -->
+
+        <section class="carousels">
+
+          <div class="glut">
+            <div class="glut-box">
+              <div class="glut-box-one">
+                <!-- Slideshow container -->
+                <h4><b>What to do with a glut</b></h4>
+                <div class="underline-title-glut">
+                </div>
+
+                <div class="myCarousel">
+                  <div class="carousel-box">
+                    <img class="carousel-image" src="https://i.imgur.com/899JjgP.jpg" alt="mini-eggplant">
+                    <div class="recipe-link">
+                      <a href="https://www.studiodelicious.com/mini-eggplant-recipes/" target="_blank">Mini eggplant recipe <br> (by Studio Delicious)</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="myCarousel">
+                  <div class="carousel-box">
+                    <img class="carousel-image" src="https://i.imgur.com/LNMBjdj.jpg" alt="spinach-harvest">
+                    <div class="recipe-link">
+                      <a href="https://dieteticdirections.com/easy-spinach-pesto/" target="_blank">Easy spinach pesto <br> (by Dietetic Directions)</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="myCarousel">
+                  <div class="carousel-box">
+                    <img class="carousel-image" src="https://i.imgur.com/eHHrYnS.jpg" alt="cherry-tomato-harvest">
+                    <div class="recipe-link">
+                      <a href="https://www.foragebyronbay.com.au/blog/roast-cherry-tomato-chutney" target="_blank">Roast cherry tomato chutney <br> (by Forage by Byron Bay)</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="myCarousel">
+                  <div class="carousel-box">
+                    <img class="carousel-image" src="https://i.imgur.com/HeWPkmS.jpg" alt="Anaheim-chilli-harvest">
+                    <div class="recipe-link">
+                      <a href="https://www.beyondthechickencoop.com/green-chili-sauce/" target="_blank">Green (or red) chilli sauce recipe <br> (by Beyond the Chicken Coop)</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="myCarousel">
+                  <div class="carousel-box">
+                    <img class="carousel-image" src="https://i.imgur.com/a5QLwVc.jpg" alt="chill-harvest">
+                    <div class="recipe-link">
+                      <a href="https://simply-delicious-food.com/easy-quick-pickled-chillies/" target="_blank">Easy quick pickled chillies <br> (by Simply Delicious)</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <div class="transition-arrow-dot">
+                  <div class="arrows">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <br>
+
+                    <!-- The dots/circles -->
+                    <div class="dots">
+                      <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                      </div>
+                    </div>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="carousels">
+          <div class="month-plus-dots">
+            <div class="myCarousel-month">
+              <div class="This-month">
+                <h4><b>March 2025 for you</b></h4>
+              </div>
+              <div class="underline-title-month">
+              </div>
+              <div class="This-month">
+                <img class="month-image" src="https://i.imgur.com/Xr7pGdC.jpg" alt="ideas-March25">
+                <div class="try-these-links-month">
+                  <a href="https://youtu.be/R1_b3wsCB-k" target="_blank">Gardening jobs for early autumn</a>
+                  <a href="https://youtu.be/NYPB82oG4Yo" target="_blank">Why plant your crops in autumn</a>
+                  <a href="https://youtu.be/hJ7G25Kj7Kk" target="_blank">Backyard garden tour</a>
+                  <a href="https://youtu.be/-VaXEfhzzgs?list=PLo5M7QJYv5E0dHMW9MCjaM-Zg00JmynNf" target="_blank">Peony and Iris Tour</a>
+                  <a href="https://youtu.be/-jKTrasgoSs" target="_blank">Spectacular cottage garden</a>
+                  <a href="https://youtu.be/LNOtOCsgMh4" target="_blank">Secret garden tour: Castletown</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="myCarousel-month">
+              <div class="This-month">
+                <h4><b>April 2025 things for you</b></h4>
+              </div>
+              <div class="underline-title-month">
+              </div>
+              <div class="This-month">
+                <img class="month-image" src="https://i.imgur.com/RWd8R21.jpg" alt="calendar-icon">
+                <div class="try-these-links-month">
+                  <!--               <a href="https://youtu.be/WGgUpyszZBg" target="_blank">Kentucky's secret gardens</a>
+              <a href="https://youtu.be/pchipdy76no" target="_blank">Gerddi Cudd hidden gardens Wales</a>
+              <a href="https://youtu.be/WvoiQFdso7A" target="_blank">Secret garden: springtime's micro-ecosystems</a>
+              <a href="https://youtu.be/uSnwysmJWh8" target="_blank">The real secret garden; the most famous in literature</a>
+              <a href="https://youtu.be/s4yhD8hVNQI" target="_blank">Secret garden tour: nature sounds, Rhode Island</a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="myCarousel-month">
+              <div class="This-month">
+                <h4><b>May 2025 things for you</b></h4>
+              </div>
+              <div class="underline-title-month">
+              </div>
+              <div class="This-month">
+                <img class="month-image" src="https://i.imgur.com/RWd8R21.jpg" alt="calendar-icon">
+                <div class="try-these-links-month">
+                  <!--               <a href="https://youtu.be/WGgUpyszZBg" target="_blank">Kentucky's secret gardens</a>
+<a href="https://youtu.be/nLw7QZjDFF0?list=PLo5M7QJYv5E0dHMW9MCjaM-Zg00JmynNf" target="_blank">Spring front garden, Memphis Tennessee</a>
+              <a href="https://youtu.be/pchipdy76no" target="_blank">Gerddi Cudd hidden gardens Wales</a>
+              <a href="https://youtu.be/WvoiQFdso7A" target="_blank">Secret garden: springtime's micro-ecosystems</a>
+              <a href="https://youtu.be/uSnwysmJWh8" target="_blank">The real secret garden; the most famous in literature</a>
+              <a href="https://youtu.be/s4yhD8hVNQI" target="_blank">Secret garden tour: nature sounds, Rhode Island</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <div class="transition-arrow-dot-month">
+              <div class="arrows-month">
+                <a class="prev-month" onclick="plusSlidesMonth(-1)">&#10094;</a>
+                <br>
+
+                <!-- The dots/circles -->
+                <div class="dots-month">
+                  <div style="text-align:center">
+                    <span class="dot-month" onclick="currentSlideMonth(1)"></span>
+                    <span class="dot-month" onclick="currentSlideMonth(2)"></span>
+                    <span class="dot-month" onclick="currentSlideMonth(3)"></span>
+                  </div>
+                </div>
+                <a class="next-month" onclick="plusSlidesMonth(1)">&#10095;</a>
+              </div>
+            </div>
+          </div>
+
+          <!--           </div> -->
+
+          <!--         </section> -->
+          <!--  END MONTH CAROUSEL  -->
+        </section>
+      </section>
+      <!--  END IDEAS SECTION  -->
 
     </section>
 
-    <!--    START KIERAN"S GARDEN DIARY -->
-    
-    
-    
-<!-- --------------- -->
-   <div class="my-journal">
+    <div class="how-do-I-section">
+      <h2 id="how">How do I...</h2>
+
+      <section class="how-do-I-boxes">
+        <div class="how-do-I">
+          <section class="how-boxes">
+            <div class="how-topic">
+              <img class="how-image" src="https://i.imgur.com/1f0H2Ku.jpg" alt="snail">
+              <div class="how-topic"><b>Get rid of snails</b></div>
+              <a href="https://www.abc.net.au/gardening/how-to/top-tip-snail-control/10975154" target="_blank">Snail traps</a>
+              <a href="https://youtu.be/Rpk8yM9JfCU" target="_blank">Making the ground uncomfortable for snails</a>
+            </div>
+          </section>
+
+          <section class="how-boxes">
+            <div class="how-topic">
+              <img class="how-image" src="https://i.imgur.com/NuNxu1d.jpg" alt="whitefly">
+              <div class="how-topic"><b>Get rid of whitefly</b></div>
+              <p class="content-smaller">Spray with a mixture of 500 ml water, half teaspoon biodegradable detergent, half teaspoon olive oil. Remember to check under leaves!</p>
+            </div>
+          </section>
+
+          <section class="how-boxes">
+            <div class="how-topic">
+              <img class="how-image" src="https://i.imgur.com/BU7bIDB.jpg" alt="mouse">
+              <div class="how-topic"><b>Stop animals eating my food</b></div>
+              <a href="https://www.abc.net.au/gardening/how-to/you-dirty-rat/12095852" target="_blank">Rats in the compost</a>
+              <a href="https://youtu.be/p-EQTtre7wM" target="_blank">More about rats in the compost</a>
+              <a href="https://www.bunnings.com.au/diy-advice/garden/planting-and-growing/how-to-protect-crops-from-birds" target="_blank">How to use bird netting</a>
+              <a href=" https://youtu.be/tP3q4xhwZ7g" target="_blank">Metal-wrapping trees (might work for garden beds too!)</a>
+            </div>
+          </section>
+
+          <section class="how-boxes">
+            <div class="how-topic">
+              <img class="how-image" src="https://i.imgur.com/lyjInl5.jpg" alt="powdery-mildew">
+              <div class="how-topic"><b>Get rid of powdery mildew</b></div>
+
+              <p2 class="content-smaller">Grow plants in a sunny, airy position and avoid overfertilising. Remove and dispose of affected leaves.</p2>
+              <a href="https://www.growingagreenerworld.com/controlling-or-eliminating-powdery-mildew/" target="_blank">Try these home-made recipes</a>
+              <a href="https://www.theseedcollection.com.au/blog/bi-carb-of-soda-fungicide-for-powdery-mildew" target="_blank">Bi-carb soda spray</a>
+
+            </div>
+          </section>
+
+          <section class="how-boxes">
+            <div class="how-topic">
+              <img class="how-image" src="https://i.imgur.com/h4N9LMV.jpg" alt="scale">
+              <div class="how-topic"><b>Get rid of scale</b></div>
+              <p class="content-smaller">Spray with a mixture of 500 ml water and half a teaspoon of biodegradable detergent. Remember to check stalks, stems and under leaves!</p>
+
+            </div>
+          </section>
+
+          <section class="how-boxes">
+            <div class="how-topic">
+              <img class="how-image" src="https://i.imgur.com/WqXSvoB.jpg" alt="caterpillar">
+              <div class="how-topic"><b>Get rid of caterpillars</b></div>
+              <p class="content-smaller">For orchids, cucumber, zucchini or hairy-leaf plants, spray caterpillars with whitefly spray. For other plants, use whitefly spray or a mixture of 1 tablespoon of vegetable oil and half a tablespoon of biodegradable detergent in 500 ml of water</p>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+
+    <section class="favourites">
+      <div class="my-favourites-section">
+        <h2 id="favourites">My favourites</h2>
+
+        <nav class="favourite-links">
+          <a href="https://www.bhg.com.au/garden/" target="_blank">Better Homes and Gardens</a>
+          <a href="https://www.bunnings.com.au/bunnings-magazine/january-2025" target="_blank">Bunnings Magazine</a>
+          <a href=" https://www.burkesbackyard.com.au/" target="_blank">Burke's Backyard</a>
+          <a href="https://www.bing.com/ck/a?!&&p=9dec92cbfa63d643e30f448247a934095e04bc129129f5d04916496cdcb996daJmltdHM9MTczNzY3NjgwMA&ptn=3&ver=2&hsh=4&fclid=1f41f1cb-ff3e-609a-1582-e2e9fe2e61fd&psq=gardening+australia&u=a1aHR0cHM6Ly93d3cuYWJjLm5ldC5hdS9nYXJkZW5pbmc&ntb=1" target="_blank">Gardening Australia</a>
+          <a href="https://plantnet.com.au/plant-care/perfect-fruit-tree-to-grow/" target="_blank">Growing fruit trees in Australia</a>
+          <a href="https://localfoodconnect.org.au/" target="_blank">Local Food Connect (NE Melbourne)</a>
+          <a href="https://www.bing.com/ck/a?!&&p=51870385f8500d57b98065f7791b476016a3d290c6cb550454ace2ba76012970JmltdHM9MTczNzY3NjgwMA&ptn=3&ver=2&hsh=4&fclid=1f41f1cb-ff3e-609a-1582-e2e9fe2e61fd&psq=my+open+garden&u=a1aHR0cHM6Ly93d3cubXlvcGVuZ2FyZGVuLmNvbS5hdS8&ntb=1" target="_blank">My Open Garden</a>
+          <a href="https://www.sgaonline.org.au/" target="_blank">Sustainable Gardening Australia</a>
+          <a href="https://vasilisgarden.com/" target="_blank">Vasili’s Garden</a>
+          <a href="https://www.gardeningknowhow.com/" target="_blank">Gardening Know How (US)</a>
+          <a href="https://www.marthastewart.com/" target="_blank">Martha Stewart (US)</a>
+          <a href="https://orchidresourcecenter.com/contact-us/" target="_blank">Orchid Resource Centre (US)</a>
+          <a href="https://rennieorchards.com" target="_blank">Rennie Orchards (US) </a>
+          <a href="https://www.kew.org/" target="_blank">Royal Botanic Gardens Kew (UK)</a>
+          <a href="https://www.thespruce.com/" target="_blank">The Spruce (US)</a>
+        </nav>
+      </div>
+    </section>
+    <!--     </div> -->
+
+    <div class="my-journal">
       <h2 id="journal">My journal</h2>
 
       <div class="my-journal-section">
         <section class="journal">
           <div class="journal-grid">
-               </div>
+
+            <!--   <form id="FORM_ID" method="POST" action="https://script.google.com/u/0/home/projects/1KOH0Heruz2p9D7KCDO66t1BKJxa_IhenNDyZK-BqhW_XxfLwwJc2Obrb/edit">           -->
+            <!--             <form id="FORM_ID" method="POST" action="https://script.google.com/macros/s/AKfycbyOcxvQrQDrBYP_2N29gIEoUcdNYCbLEEJ2ElAtImUwV6X5sdoKyxWCALztdAKl8qlfug/exec"> -->
+            <!--             <form id="FORM_ID" method="POST" action="https://script.google.com/macros/s/AKfycbyFh00_wVVZ7xt3acdQ8o4TQbVOpGiaS8v-JiBMHE0c2iIvAvEk8yz2vaOq5W_VSR3tkQ/exec">
+
+              <div class="form-row">
+                <label for="name">Topic</label>
+                <br>
+                <input type="text" name="Topic" placeholder="Write the topic here" id="topic" autofocus>
+                <br>
+                <br>
+                <!--            <input name="topic" type="text" required> -->
+            <!--                 <div class="form-row">
+                  <label for="notes">Notes</label>
+                  <br> -->
+            <!--                   <input type="textarea" name="mynotes" placeholder="Write your notes here" id="notes" autofocus> -->
+            <!--                   <input type="textarea" name="Notes" placeholder="Write your notes here" id="notes" autofocus>
+                  <br>
+                  <br> -->
+            <!--            <input name="mynotes" type="textarea" required> -->
+            <!--                   <label for="date">Date:</label>
+                  <br>
+                  <input type="date" id="date" name="Date:">
+                  <br>
+                  <br>
+                  <button type="submit" id="submit-button" name="btnsubmit">Enter</button>
+                </div>
+              </div>
+            </form> -->
+          </div>
         </section>
-        
-   <div class="journal-notes-display">
+
+        <!--    LINK TO GOOGLESHEET    <a href="https://docs.google.com/spreadsheets/d/1qlkUWMJl-8PGZX05bYWGJq2Bs49DuSPHBy0ICq6zdZY/edit?gid=0#gid=0"> -->
+
+        <div class="journal-notes-display">
           <div class="journal-heading">
-            <h3>My vegie garden diary...</h3>
-<!--             <img class="leaves" src="https://i.imgur.com/7uoVD09.jpg" alt="leaves"> -->
+            <h3>Notes from Mary's journal...</h3>
+            <img class="leaves" src="https://i.imgur.com/7uoVD09.jpg" alt="leaves">
           </div>
 
           <div class="appsheet">
-              <iframe src="https://www.appsheet.com/start/fb95d854-a15d-449e-972a-3214b9d670e5"  width="100%" height="568"></iframe>
+            <iframe src="https://www.appsheet.com/preview/a24554a4-44f3-4d44-b9b5-9165ec9ca82e" width="100%" height="568"></iframe>
           </div>
-            <!--         </div>
-      </section> -->
-
-          <!--    LINK TO GOOGLESHEET    <a href="https://docs.google.com/spreadsheets/d/1hGRDtPG2BF-GH101f7fPpqcbSf_cKN84H06Bvb2D9ng/edit?gid=0#gid=0"> -->
-
-<!--           <div class="journal-notes-display">
-            <div class="journal-heading">
-              <h3>My vegie garden diary</h3> -->
-              <!--               <img class="journal-image" src="https://i.imgur.com/7uoVD09.jpg" alt="leaves"> -->
-<!--             </div>
-            <div class="appsheet">
-              <iframe src="https://www.appsheet.com/start/fb95d854-a15d-449e-972a-3214b9d670e5"></iframe> -->
-              <!--               <iframe src="https://script.google.com/macros/s/AKfycbxiupRtdcpQc_Z2wy1XexB_h-ajt7R8Q3jhzqrvhEw/dev" width="100%" height="568"></iframe> -->
-              <!--                <iframe src="https://script.google.com/macros/s/AKfycbzI5rgP-Y7HNDppbEa7yG5UoWJbz23p6KhFnkfgjupqQqGKaovqvEkwkIOwNxUJfld_/exec" width="100%" height="568"></iframe> -->
-              <!--                 <iframe src="https://script.google.com/macros/s/AKfycbxCBqsYyBdwCiUnTpFg8btYYUqZ31diOMURmqZ2HRmsitHuQ2qDNrZnNndHU99S9sIg/exec" width="100%" height="568"></iframe> -->
-
-              <!--       https://script.google.com/macros/s/AKfycbzTpU51q_UkJcRxPKJJhqAZhJ4xBU64qqj8mtd_INxFs0vLweJtB_QOLolCootb8Tb04g/exec -->
-
-              <!--               <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6a0DV3Ugrml3iAzJpTFWuSSkhaWTXf2nwpjcB1DnXM5OBM4j8Vz2pxB-Do6eBz6g-QGpIM4Ex02kD/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="568"></iframe> -->
-
-            </div>
-          </div>
+          <!--           <iframe style="overflow: hidden; width: 100%; height: 100%; position: relative; border: none;" src="https://www.appsheet.com/start/YOUR_APP_ID?refresh=1&wipe=1"></iframe> -->
         </div>
 
+      </div>
+    </div>
+    <!--       <div class="appsheet">
+        <iframe src="https://www.appsheet.com/preview/a24554a4-44f3-4d44-b9b5-9165ec9ca82e" width="100%" height="568"></iframe>
+      </div>
+      <iframe style="overflow: hidden; width: 100%; height: 100%; position: absolute; border: none;" src="https://www.appsheet.com/start/YOUR_APP_ID?refresh=1&wipe=1"></iframe>
+    </div> -->
 
+    <!--         <div class="journalAPI">
+          <iframe src="https://www.appsheet.com/preview/a24554a4-44f3-4d44-b9b5-9165ec9ca82e" width="100%" height="568"></iframe>
+        </div> -->
 
-    <!-- url for Kieran's vegie garden diary googlesheet: https://docs.google.com/spreadsheets/d/1hGRDtPG2BF-GH101f7fPpqcbSf_cKN84H06Bvb2D9ng/edit?gid=0#gid=0 -->
+    <!--         --------------------------------- -->
+    <!--    LINK TO GOOGLESHEET    <a href="https://docs.google.com/spreadsheets/d/1qlkUWMJl-8PGZX05bYWGJq2Bs49DuSPHBy0ICq6zdZY/edit?gid=0#gid=0"> -->
+    <!--         ---------------------------------  -->
+    <!--         Sheet DB (limited use per month) -->
+    <!--    EMBED GOOGLE SHEET USING THESE INSTRUCTIONS https://spreadsheetpoint.com/embed-a-google-sheet/   -->
+    <!--           <script src="https://sheetdb.io/s/t/qq4m73xdtr4ou.js"></script>
+        </div> -->
 
-    <!--    END KIERAN"S GARDEN DIARY -->
+    <!--  ----------------------------------        -->
 
+    <!--    EMBED GOOGLE SHEET USING THESE INSTRUCTIONS https://spreadsheetpoint.com/embed-a-google-sheet/   -->
+    <!--         <div class="embed-googlesheet">          
+          <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS5IvCHHKyb4FPja8Bo4r3CNXyzGDFNftLVrzKjwnguq_dFGoks_cFMifLGH4FCz8aF5Lfrab8qcLOJ/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="500" frameborder="0" scrolling="yes"></iframe> -->
+    <!--          ----------------------------------        -->
+
+    <!-- url for Mary's Masterpiece Journal googlesheet: https://docs.google.com/spreadsheets/d/1qlkUWMJl-8PGZX05bYWGJq2Bs49DuSPHBy0ICq6zdZY/edit?gid=0#gid=0 -->
   </main>
 </body>
 
 <footer class="footer">
-  <p>Website created February 2026 by an auntie who is excited that her nephew is interested in gardening!  Pictures drawn by a cousin who loved to draw when he was a child and some photos from Granny Mary's garden.</p>
+  <p>Website created February 2025 by a daughter who is so very proud of her mother.</p>
+  <p>Pictures drawn by a grandson who is so very proud of his grandmother.</p>
+  <p>Photos provided by that very same mother and grandmother... <i>bet she never guessed how they would be used!</i></p>
 </footer>
 
 </html>
